@@ -1,0 +1,52 @@
+﻿ٍ@model ViewModels.BlogListViewModel
+@{
+	ViewBag.Title = "متخصصین و مشاوران";
+	Layout = "~/Views/Shared/FrontEnd/_FrontEndLayout.cshtml";
+}
+
+
+<div class="page-banner-area bg-3">
+	<div class="d-table">
+		<div class="d-table-cell">
+			<div class="container">
+				<div class="page-content">
+					<h2>متخصصین</h2>
+					<ul>
+						<li><a href="/">خانه</a></li>
+						<li>وبلاگ</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="blog-area blog-area-two ptb-100">
+	
+	<div class="container">
+		<div class="row">
+			@foreach (var blog in Model.Blogs)
+			{
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<a href="/blog/post/@blog.UrlParam">
+							<img src="@blog.ImageUrl" alt="@blog.Title">
+						</a>
+						<div class="b-card-text">
+							<span>@blog.CreationDateStr<a href="#"></a></span>
+							<span class="t-right"><i class='bx bx-user'></i> @blog.Visit</span>
+							<h3><a href="/blog/post/@blog.UrlParam">@blog.Title</a>
+							</h3>
+
+							<div class="view-more">
+								<a href="/blog/post/@blog.UrlParam" class="view-more-btn">
+ادامه مطلب									<span></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</div>

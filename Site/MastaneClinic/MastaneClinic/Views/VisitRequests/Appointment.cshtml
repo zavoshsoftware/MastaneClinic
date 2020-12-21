@@ -1,0 +1,93 @@
+﻿@model ViewModels.AppointmentViewModel
+@{
+		ViewBag.Title = "تماس با ما";
+		Layout = "~/Views/Shared/FrontEnd/_FrontEndLayout.cshtml";
+}
+
+<div class="page-banner-area bg-3">
+	<div class="d-table">
+		<div class="d-table-cell">
+			<div class="container">
+				<div class="page-content">
+					<h2>درخواست مشاوره</h2>
+					<ul>
+						<li><a href="/">خانه</a></li>
+						<li>درخواست مشاوره</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="appointment-area bg-color2  ptb-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="appointment-text">
+					<div class="section-title-two">
+						<span>وقت مشاوره</span>
+						<h2>جهت دریافت وقت مشاوره فرم زیر را تکمیل کنید</h2>
+						<p>جهت دریافت وقت مشاوره از متخصصین کلینیک روانشناسی مستانه فرم زیر را تکمیل فرمایید</p>
+						<p>پس از تکمیل فرم زیر، کارشناسان مستانه با شما تماس خواهند گرفت و جزییات زمان مشاوره تلفنی یا حضوری شما را هماهنگ خواهند کرد. از آنجایی که تعداد درخواست ها زیاد می باشد، پیشاپیش از صبر و شکیبایی شما سپاسگذاریم.</p>
+					</div>
+					<div class="appointment-form">
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="first-name" placeholder="نام و نام خانوادگی*">
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="txtCellNumber" placeholder="شماره تماس*">
+								</div>
+							</div>
+
+							<div class="col-md-6 col-md-6 col-lg-6">
+								<div class="form-group">
+
+									<select class="form-control" id="ddlservice">
+										<option value="0">انتخاب خدمات</option>
+										@foreach (var service in Model.MenuItems)
+										{
+												<option value="@service.Id">@service.Title</option>
+}
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<input id="txtdatetime" type="text" class="form-control" placeholder="تاریخ و ساعت مناسب شما">
+								</div>
+							</div>
+
+						</div>
+						<div class="appointment-btn">
+							<button type="button" class="default-btn" onclick="submitAppointment();">
+								ثبت درخواست <span></span>
+							</button>
+
+							<div class="alert alert-danger" id="errorDiv"></div>
+							<div class="alert alert-success" id="SuccessDiv">درخواست شما با موفقیت ثبت گردید</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="appointment-img">
+					<div class="img-one">
+						<img src="/assets/img/appointment/appointment-1.jpg" alt="Image">
+					</div>
+					<div class="img-two">
+						<img src="/assets/img/appointment/appointment-2.jpg" alt="Image">
+					</div>
+					<div class="img-three">
+						<img src="/assets/img/appointment/appointment-3.jpg" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

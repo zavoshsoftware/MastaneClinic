@@ -1,0 +1,79 @@
+﻿ٍ@model ViewModels.ExpertListViewModel
+@{
+    ViewBag.Title = "متخصصین و مشاوران";
+    Layout = "~/Views/Shared/FrontEnd/_FrontEndLayout.cshtml";
+}
+
+
+<div class="page-banner-area bg-3">
+	<div class="d-table">
+		<div class="d-table-cell">
+			<div class="container">
+				<div class="page-content">
+					<h2>متخصصین</h2>
+					<ul>
+						<li><a href="/">خانه</a></li>
+						<li>متخصصین</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Page Banner Area -->
+<!-- Doctors Area -->
+<div class="doctors-area bg-f6f4ff ptb-100">
+	<div class="container">
+		<div class="section-title-one">
+			<h2>متخصصین و مشاوران کلینیک مستانه</h2>
+		</div>
+		<div class="row">
+			@foreach (var expert in Model.Experts)
+			{
+				
+		
+			<div class="col-lg-4 col-sm-6">
+				<div class="doctors-card">
+					<a href="doctors-details">
+						<img src="@expert.ImageUrl" alt="@expert.FullName">
+					</a>
+					<div class="d-table">
+						<div class="d-table-cell">
+							<div class="caption">
+								<div class="caption-text">
+									<h3><a href="doctors-details">@expert.FullName</a></h3>
+									<p>@expert.Degree</p>
+									<a href="#">@expert.Email</a>
+									<ul>
+										<li>
+											<a href="#" target="_blank">
+												<i class='bx bxl-facebook'></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank">
+												<i class='bx bxl-linkedin'></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank">
+												<i class='bx bxl-twitter'></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank">
+												<i class='bx bxl-instagram'></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			}
+
+		</div>
+	</div>
+</div>

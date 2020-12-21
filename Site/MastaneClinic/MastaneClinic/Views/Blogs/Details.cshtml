@@ -1,0 +1,76 @@
+﻿@model ViewModels.BlogDetailViewModel
+@{
+		ViewBag.Title = Model.Blog.Title;
+		Layout = "~/Views/Shared/FrontEnd/_FrontEndLayout.cshtml";
+}
+
+<div class="page-banner-area bg-3">
+	<div class="d-table">
+		<div class="d-table-cell">
+			<div class="container">
+				<div class="page-content">
+					<h2>@Model.Blog.Title</h2>
+					<ul>
+						<li><a href="/">خانه</a></li>
+						<li><a href="/blog">وبلاگ</a></li>
+						<li>@Model.Blog.Title</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="services-dateils-area ptb-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="services-details">
+					<div class="header-img">
+						<img src="@Model.Blog.ImageUrl" alt="@Model.Blog.Title">
+					</div>
+					<div class="details-text">
+						@Html.Raw(Model.Blog.Body)
+					</div>
+
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12">
+				<div class="widget-area">
+
+					<div class="widget widget_categories">
+						<h3 class="widget-title">خدمات مستانه</h3>
+						<ul class="bg-f6f4ff">
+							@foreach (var service in Model.SidebarServices)
+							{
+									<li>
+										<i class='bx bx-chevrons-left'></i>
+										<a href="/service/@service.UrlParam">@service.Title</a>
+									</li>
+
+							}
+
+						</ul>
+					</div>
+					<div class="widget widget_posts_thumb">
+						<h3 class="widget-title">آخرین مقالات</h3>
+
+						@foreach (var blog in Model.SidebarBlog)
+						{
+								<div class="item">
+									<a href="/blog/post/@blog.UrlParam" class="thumb">
+										<img src="@blog.ImageUrl" alt="@blog.Title"/>
+									</a>
+									<div class="info">
+										<h4 class="title"><a href="/blog/post/@blog.UrlParam">@blog.Title</a></h4>
+										<span>@blog.CreationDateStr</span>
+									</div>
+									<div class="clear"></div>
+								</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
