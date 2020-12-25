@@ -58,7 +58,7 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button, table, th, td {
 }
 
 .services-dateils-area .services-details ul li {
-    display: block !important;
+    display: list-item !important;
     font-size: 1rem !important;
     color: #555555 !important;
 }
