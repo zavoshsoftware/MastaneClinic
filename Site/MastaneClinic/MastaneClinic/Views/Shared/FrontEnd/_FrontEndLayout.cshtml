@@ -13,8 +13,18 @@
 	<link rel="canonical" href="@ViewBag.Canonical" />
 	<meta name="description" content="@ViewBag.Description">
 	<link rel="icon" type="image/png" href="/assets/img/favicon.png">
-	<link href="~/assets/css/style-zavosh.css" rel="stylesheet" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<link href="~/assets/css/style-zavosh.css?v1.1" rel="stylesheet" />
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/iransans/IRANSansWebFaNum.eot" type="font/eot" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/IranSans/IRANSansWebFaNum.woff" type="font/woff" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/IranSans/IRANSansWebFaNum.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/iransans/IRANSansWebFaNum.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+ 
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.eot" type="font/eot" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.woff" type="font/woff" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRF9XKQ87P"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -25,38 +35,41 @@
 	</script>
 </head>
 <body>
-	<div class="navbar-area">
-		<div class="main-responsive-nav">
-			<div class="container">
-				<div class="main-responsive-menu">
-					<div class="logo">
-						<a href="/">
-							<img src="/assets/img/logo.png" alt="کلینیک مستانه">
-						</a>
-					</div>
+<link href="~/assets/css/style/header.css" rel="stylesheet" />
+
+<div class="navbar-area">
+	<div class="main-responsive-nav">
+		<div class="container">
+			<div class="main-responsive-menu">
+				<div class="logo">
+					<a href="/">
+						<img src="/assets/img/logo.png" alt="کلینیک مستانه">
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="main-navbar pag-nav">
-			<div class="container">
-				<nav class="navbar  navbar-expand-md navbar-two">
-					<a class="navbar-brand" href="/">
-						<img src="/assets/img/logo.png" alt="کلینیک مستانه">
-					</a>
-					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-						@Html.Partial("FrontEnd/_MenuPartial")
-					</div>
-				</nav> 
-			</div>
+	</div>
+	<div class="main-navbar pag-nav">
+		<div class="container">
+			<nav class="navbar  navbar-expand-md navbar-two">
+				<a class="navbar-brand" href="/">
+					<img src="/assets/img/logo.png" alt="کلینیک مستانه">
+				</a>
+				<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+					@Html.Partial("FrontEnd/_MenuPartial")
+				</div>
+			</nav>
 		</div>
 	</div>
-	@RenderBody()
-	@Html.Partial("FrontEnd/_FooterPartial")
+</div>
+@RenderBody()
+@Html.Partial("FrontEnd/_FooterPartial")
 
 <div class="go-top">
 	<i class='bx bxs-upvote'></i>
 </div>
-	
+<link rel="stylesheet" href="/assets/css/style.min.css">
+
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/boxicons.min.css">
 <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
@@ -65,20 +78,19 @@
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
-<link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/responsive.css">
 <link rel="stylesheet" href="/assets/css/rtl.css">
 <script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/popper.min.js"></script>
-	<script src="/assets/js/bootstrap.min.js"></script>
-	<script src="/assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="/assets/js/meanmenu.min.js"></script>
-	<script src="/assets/js/jquery.nice-select.min.js"></script>
-	<script src="/assets/js/owl.carousel.min.js"></script>
-	<script src="/assets/js/jquery.mixitup.min.js"></script>
-	<script src="/assets/js/form-validator.min.js"></script>
-	<script src="/assets/js/contact-form-script.js"></script>
-	<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
-	<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/meanmenu.min.js"></script>
+<script src="/assets/js/jquery.nice-select.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.mixitup.min.js"></script>
+<script src="/assets/js/form-validator.min.js"></script>
+<script src="/assets/js/contact-form-script.js"></script>
+<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="/assets/js/custom.js"></script>
 </body>
 </html>

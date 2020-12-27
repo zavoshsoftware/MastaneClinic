@@ -1,0 +1,140 @@
+﻿@model ViewModels.AboutViewModel
+
+@{
+    ViewBag.Title = "درباره ما";
+    Layout = "~/Views/Shared/FrontEnd/_FrontEndLayout.cshtml";
+}
+
+<div class="page-banner-area bg-3">
+	<div class="d-table">
+		<div class="d-table-cell">
+			<div class="container">
+				<div class="page-content">
+					<h2>درباره ما</h2>
+					<ul>
+						<li><a href="/">خانه</a></li>
+						<li>درباره ما</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="about-area ptb-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="about-img">
+					<div class="main-img">
+						<img src="/assets/img/about/about-1.jpg" alt="Image">
+						<div class="shape-1">
+							<img src="/assets/img/shapes/shape-3.png" alt="Shape">
+						</div>
+						<div class="shape-2">
+							<img src="/assets/img/shapes/shape-3.png" alt="Shape">
+						</div>
+				
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="about-text">
+					<div class="section-title-two">
+						<span>درباره ما</span>
+						<h2>ارائه خدمات تخصصی روانشناسی در کلینیک مستانه</h2>
+						<p>کلینیک روانشناسی مستانه در سال 1398 توسط جناب آقای سبحان احمدی و آقای دکتر امیرسجاد فتوره چی با هدف ارائه خدمات تخصصی و با کیفیت مشاوره روانشناسی تاسیس گردید.</p>
+						<p>این موسسه با در اختیار داشتن متخصصین خبره و با تجربه در مدت کوتاهی توانسته است تا جز برترین موسسات ارائه خدمات مشاوره ای قرار بگیرد. این موسسه علاوه بر خدمات اصلی مشاوره ای خدمات زیر را نیز به مشتریان خود ارائه می دهد.</p>
+					</div>
+					<ul>
+					 
+						<li>
+							<i class='bx bx-brain'></i>
+							خدمات نوروساینس
+						</li>	<li>
+							<i class='bx bx-brain'></i>
+							خدمات ژنتیک
+						</li>	<li>
+							<i class='bx bx-brain'></i>
+							تستهای روانسنجی
+						</li>
+					</ul>
+					<div class="about-btn">
+						<a href="/service" class="default-btn">
+							مشاهده کلیه خدمات مستانه <span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="team-area bg-color ptb-100">
+	<div class="container">
+		<div class="section-title-one">
+			<h2>بنیانگذاران کلینیک مستانه</h2>
+		</div>
+		
+		<div class="manager-team">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="manager-card">
+						<img src="~/assets/img/cofounder1.jpg" />
+						<div class="manager-caption">
+							<h3><a href="#">دکتر امیرسجاد فتوره چی</a></h3>
+							<span>هم بنیان‌گذار و رییس هیت مدیره موسسه روانشناسی مستانه</span>
+							 
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="manager-card">
+						<img src="~/assets/img/cofounder2.jpg" />
+						<div class="manager-caption">
+							<h3><a href="#">جناب آقای سبحان احمدی</a></h3>
+							<span>هم بنیان‌گذار و مدیرعامل موسسه روانشناسی مستانه</span>
+							 
+						</div>
+					</div>
+				</div>
+				
+				
+
+			</div>
+		</div>
+	 
+		 
+	</div>
+</div>
+
+
+
+<div class="services-area pt-100 pb-70">
+	<div class="container">
+		<div class="section-title-one">
+			<span>خدمات ما</span>
+			<h2>خدمات اصلی مرکز روانشناسی مستانه به شرح زیر می باشد</h2>
+		</div>
+		<div class="row">
+			@foreach (var service in Model.MenuItems)
+			{
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-card-three">
+						<a href="/service/@service.UrlParam">
+							<img src="@service.ThumbImageUrl" alt="@service.Title">
+						</a>
+						<div class="s-card-three-text">
+							<h3><a href="/service/@service.UrlParam">@service.Title</a></h3>
+							<div class="s-card-three-btn">
+								<a href="/service/@service.UrlParam" class="default-btn three">اطلاعات بیشتر
+									<span></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</div>

@@ -173,6 +173,8 @@ namespace MastaneClinic.Controllers
                 return RedirectToAction("List");
             }
 
+            blog.Visit += 1;
+            db.SaveChanges();
             BlogDetailViewModel result = new BlogDetailViewModel()
             {
                 Blog = blog,

@@ -31,5 +31,11 @@ namespace MastaneClinic.Controllers
             ContactViewModel contact = new ContactViewModel();
             return View(contact);
         }
+        [Route("About")]
+        public ActionResult About()
+        {
+            AboutViewModel contact = new AboutViewModel();
+            return View(contact);
+        }
     }
 }

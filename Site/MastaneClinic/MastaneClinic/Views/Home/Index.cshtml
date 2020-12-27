@@ -2,19 +2,25 @@
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" type="image/png" href="/assets/img/favicon.png">
-	<link href="~/assets/css/style-zavosh.css" rel="stylesheet" />
 	<title>کلینیک مشاوره روانشناسی مستانه</title>
 	<link rel="canonical" href="https://mastanehclinic.com/" />
 	<meta name="description" content="کلینیک روانشناسی مستانه با بیش از 100 مشاور در حوزه های مختلف روانشناسی آماده ارائه خدمات مشاوره تلفنی و حضوری به مشتریان می باشد. جهت درخواست مشاوره از طریق وب سایت یا تلفن 02122280882 تماس بگیرید.">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/iransans/IRANSansWebFaNum.eot" type="font/eot" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/IranSans/IRANSansWebFaNum.woff" type="font/woff" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/IranSans/IRANSansWebFaNum.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/fonts/iransans/IRANSansWebFaNum.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.eot" type="font/eot" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.woff" type="font/woff" as="font" crossorigin="anonymous">
+	<link rel="preload" as="font" href="https://mastanehclinic.com/assets/fonts/boxicons.ttf" type="font/ttf" as="font" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRF9XKQ87P"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -25,246 +31,249 @@
 	</script>
 </head>
 <body>
-	<header class="header-area">
-		<div class="top-header">
-			<div class="container">
-				<div class="header-content">
-					<div class="row align-items-center">
-						<div class="col-md-3">
-						</div>
-						<div class="col-md-9">
-							<ul class="contact-area">
-								<li>
-									<i class='bx bx-phone-call'></i>تلفن<br>
-									<a href="tel:+982122280882">021-22280882 </a>
-								</li>
-								<li>
-									<i class='bx bx-time-five'></i>ساعت کاری<br>
-									<span>شنبه تا پنج شنبه: 9 الی 22</span>
-								</li>
-								<li>
-									<i class='bx bxs-map'></i>آدرس<br>
-									<span>تهران، نیاوران، سه راه یاسر</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="navbar-area">
-			<div class="main-responsive-nav">
-				<div class="container">
-					<div class="main-responsive-menu">
-						<div class="logo">
-							<a href="/">
-								<img src="/assets/img/logo.png" alt="مشاوره روانشناسی مستانه">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-navbar">
-				<div class="container">
-					<nav class="navbar navbar-expand-md navbar-light">
-						<a class="navbar-brand" href="/">
-							<img src="/assets/img/logo.png" alt="مشاوره روانشناسی مستانه">
-						</a>
-						<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-							@Html.Partial("FrontEnd/_MenuPartial")
+<link href="~/assets/css/style/header.css" rel="stylesheet" />
 
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<div class="banner-area bg-color ptb-100">
+<header class="header-area">
+	<div class="top-header">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-7">
-					<div class="banner-text">
-						<span>همراه ما باشید</span>
-						<h1>خدمات مشاوره روانشناسی تلفنی و حضوری</h1>
-						<p>کلینیک روانشناسی مستانه با بیش از100 متخصص در حوزه های مختلف روانشناسی آماده ارائه خدمات مشاوره تلفنی و حضوری به مشتریان می باشد.</p>
+			<div class="header-content">
+				<div class="row align-items-center">
+					<div class="col-md-3">
 					</div>
-				</div>
-				<div class="col-lg-5">
-					<div class="banner-img">
-						<div class="shape-1">
-							<img src="/assets/img/shapes/shape-1.png" alt="Shape">
-						</div>
-						<div class="shape-2">
-							<img src="/assets/img/shapes/shape-2.png" alt="Shape">
-						</div>
-						<div class="image-1">
-							<img src="/assets/img/slide01.jpg" alt="Image">
-						</div>
-						<div class="image-2">
-							<img src="/assets/img/slide3.jpg" alt="Image">
-						</div>
-						<div class="image-3">
-							<img src="/assets/img/slide2.jpg" alt="Image">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Banner Area -->
-	<div class="about-area ptb-100">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<div class="about-img">
-						<div class="main-img">
-							<img src="/assets/img/about/about-1.jpg" alt="Image">
-							<div class="shape-1">
-								<img src="/assets/img/shapes/shape-3.png" alt="Shape">
-							</div>
-							<div class="shape-2">
-								<img src="/assets/img/shapes/shape-3.png" alt="Shape">
-							</div>
-							<div class="shape-3">
-								<img src="/assets/img/shapes/shape-4.png" alt="Shape">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="about-text">
-						<div class="section-title-two">
-							<span>درباره ما</span>
-							<h2>ارائه خدمات تخصصی روانشناسی در کلینیک مستانه</h2>
-							<p>کلینیک روانشناسی مستانه در سال 1398 توسط جناب آقای دکتر سبحان احمدی و آقای دکتر امیرساجاد فتوره چی با هدف ارائه خدمات تخصصی و با کیفیت مشاوره روانشناسی تاسیس گردید.</p>
-							<p>این موسسه با در اختیار داشتن متخصصین خبره و با تجربه در مدت کوتاهی توانسته است تا جز برترین موسسات ارائه خدمات مشاوره ای قرار بگیرد. این موسسه علاوه بر خدمات اصلی مشاوره ای خدمات زیر را نیز به مشتریان خود ارائه می دهد.</p>
-						</div>
-						<ul>
-					 
+					<div class="col-md-9">
+						<ul class="contact-area">
 							<li>
-								<i class='bx bx-brain'></i>
-							خدمات نوروساینس
-							</li>	<li>
-								<i class='bx bx-brain'></i>
-							خدمات ژنتیک
-							</li>	<li>
-								<i class='bx bx-brain'></i>
-								تستهای روانسنجی
+								<i class='bx bx-phone-call'></i>تلفن<br>
+								<a href="tel:+982122280882">021-22280882 </a>
+							</li>
+							<li>
+								<i class='bx bx-time-five'></i>ساعت کاری<br>
+								<span>شنبه تا پنج شنبه: 9 الی 22</span>
+							</li>
+							<li>
+								<i class='bx bxs-map'></i>آدرس<br>
+								<span>تهران، نیاوران، سه راه یاسر</span>
 							</li>
 						</ul>
-						<div class="about-btn">
-							<a href="/service" class="default-btn">
-							مشاهده کلیه خدمات مستانه <span></span>
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="appointment-area bg-color ptb-100">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<div class="appointment-text">
-						<div class="section-title-two">
-							<span>وقت مشاوره</span>
-							<h2>جهت دریافت وقت مشاوره فرم زیر را تکمیل کنید</h2>
-							<p>جهت دریافت وقت مشاوره از متخصصین کلینیک روانشناسی مستانه فرم زیر را تکمیل فرمایید</p>
-							<p>پس از تکمیل فرم زیر، کارشناسان مستانه با شما تماس خواهند گرفت و جزییات زمان مشاوره تلفنی یا حضوری شما را هماهنگ خواهند کرد. از آنجایی که تعداد درخواست ها زیاد می باشد، پیشاپیش از صبر و شکیبایی شما سپاسگذاریم.</p>
-						</div>
-						<div class="appointment-form">
-								<div class="row">
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="first-name" placeholder="نام و نام خانوادگی*">
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<input type="text" class="form-control" id="txtCellNumber" placeholder="شماره تماس*">
-										</div>
-									</div>
-
-									<div class="col-md-6 col-md-6 col-lg-6">
-										<div class="form-group">
-											
-											<select class="form-control" id="ddlservice">
-												<option value="0">انتخاب خدمات</option>
-												@foreach (var service in Model.MenuItems)
-												{
-														<option value="@service.Id">@service.Title</option>
-												}
-											</select>
-										</div>
-									</div> 
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<input id="txtdatetime" type="text" class="form-control" placeholder="تاریخ و ساعت مناسب شما">
-										</div>
-									</div>
-								 
-								</div>
-								<div class="appointment-btn">
-									<button type="button" class="default-btn" onclick="submitAppointment();">
-										ثبت درخواست <span></span>
-									</button>
-									
-									<div class="alert alert-danger" id="errorDiv"></div>
-									<div class="alert alert-success" id="SuccessDiv">درخواست شما با موفقیت ثبت گردید</div>
-								</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="appointment-img">
-						<div class="img-one">
-							<img src="~/assets/img/appointment/gallery_item_img_04.jpg"  alt="کلینیک روانشناسی مستانه"/>
-							@*<img src="/assets/img/appointment/appointment-1.jpg" alt="کلینیک روانشناسی مستانه">*@
-						</div>
-						<div class="img-two">
-							<img src="/assets/img/appointment/appointment-2.jpg" alt="کلینیک روانشناسی مستانه">
-						</div>
-						<div class="img-three">
-							<img src="~/assets/img/appointment/owl_img_02.jpg"  alt="کلینیک روانشناسی مستانه"/>
-							@*<img src="/assets/img/appointment/appointment-3.jpg" alt="کلینیک روانشناسی مستانه">*@
-						</div>
+	<div class="navbar-area">
+		<div class="main-responsive-nav">
+			<div class="container">
+				<div class="main-responsive-menu">
+					<div class="logo">
+						<a href="/">
+							<img src="/assets/img/logo.png" alt="مشاوره روانشناسی مستانه">
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-</div> 
+		<div class="main-navbar">
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<a class="navbar-brand" href="/">
+						<img src="/assets/img/logo.png" alt="مشاوره روانشناسی مستانه">
+					</a>
+					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+						@Html.Partial("FrontEnd/_MenuPartial")
+
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+	
+<link href="~/assets/css/style/slider.css" rel="stylesheet" />
+
+<div class="banner-area bg-color ptb-100">
+	<div class="container  custom-container">
+		<div class="row align-items-center">
+			<div class="col-lg-7">
+				<div class="banner-text">
+					<span>همراه ما باشید</span>
+					<h1>خدمات مشاوره روانشناسی تلفنی و حضوری</h1>
+					<p>کلینیک روانشناسی مستانه با بیش از100 متخصص در حوزه های مختلف روانشناسی آماده ارائه خدمات مشاوره تلفنی و حضوری به مشتریان می باشد.</p>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="banner-img">
+					<div class="shape-1">
+						<img src="/assets/img/shapes/shape-1.png" alt="Shape">
+					</div>
+					<div class="shape-2">
+						<img src="/assets/img/shapes/shape-2.png" alt="Shape">
+					</div>
+					<div class="image-1">
+						<img src="/assets/img/slide01.jpg" alt="Image">
+					</div>
+					<div class="image-2">
+						<img src="/assets/img/slide3.jpg" alt="Image">
+					</div>
+					<div class="image-3">
+						<img src="/assets/img/slide2.jpg" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Banner Area -->
+<div class="about-area ptb-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="about-img">
+					<div class="main-img">
+						<img src="/assets/img/about/about-1.jpg" alt="Image">
+						<div class="shape-1">
+							<img src="/assets/img/shapes/shape-3.png" alt="Shape">
+						</div>
+						<div class="shape-2">
+							<img src="/assets/img/shapes/shape-3.png" alt="Shape">
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="about-text">
+					<div class="section-title-two">
+						<span>درباره ما</span>
+						<h2>ارائه خدمات تخصصی روانشناسی در کلینیک مستانه</h2>
+						<p>کلینیک روانشناسی مستانه در سال 1398 توسط جناب آقای سبحان احمدی و آقای دکتر امیرسجاد فتوره چی با هدف ارائه خدمات تخصصی و با کیفیت مشاوره روانشناسی تاسیس گردید.</p>
+						<p>این موسسه با در اختیار داشتن متخصصین خبره و با تجربه در مدت کوتاهی توانسته است تا جز برترین موسسات ارائه خدمات مشاوره ای قرار بگیرد. این موسسه علاوه بر خدمات اصلی مشاوره ای خدمات زیر را نیز به مشتریان خود ارائه می دهد.</p>
+					</div>
+					<ul>
+
+						<li>
+							<i class='bx bx-brain'></i>
+							خدمات نوروساینس
+						</li> <li>
+							<i class='bx bx-brain'></i>
+							خدمات ژنتیک
+						</li> <li>
+							<i class='bx bx-brain'></i>
+							تستهای روانسنجی
+						</li>
+					</ul>
+					<div class="about-btn">
+						<a href="/service" class="default-btn">
+							مشاهده کلیه خدمات مستانه <span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="appointment-area bg-color ptb-100">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="appointment-text">
+					<div class="section-title-two">
+						<span>وقت مشاوره</span>
+						<h2>جهت دریافت وقت مشاوره فرم زیر را تکمیل کنید</h2>
+						<p>جهت دریافت وقت مشاوره از متخصصین کلینیک روانشناسی مستانه فرم زیر را تکمیل فرمایید</p>
+						<p>پس از تکمیل فرم زیر، کارشناسان مستانه با شما تماس خواهند گرفت و جزییات زمان مشاوره تلفنی یا حضوری شما را هماهنگ خواهند کرد. از آنجایی که تعداد درخواست ها زیاد می باشد، پیشاپیش از صبر و شکیبایی شما سپاسگذاریم.</p>
+					</div>
+					<div class="appointment-form">
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="first-name" placeholder="نام و نام خانوادگی*">
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="txtCellNumber" placeholder="شماره تماس*">
+								</div>
+							</div>
+
+							<div class="col-md-6 col-md-6 col-lg-6">
+								<div class="form-group">
+
+									<select class="form-control" id="ddlservice">
+										<option value="0">انتخاب خدمات</option>
+										@foreach (var service in Model.MenuItems)
+										{
+											<option value="@service.Id">@service.Title</option>
+										}
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<div class="form-group">
+									<input id="txtdatetime" type="text" class="form-control" placeholder="تاریخ و ساعت مناسب شما">
+								</div>
+							</div>
+
+						</div>
+						<div class="appointment-btn">
+							<button type="button" class="default-btn" onclick="submitAppointment();">
+								ثبت درخواست <span></span>
+							</button>
+
+							<div class="alert alert-danger" id="errorDiv"></div>
+							<div class="alert alert-success" id="SuccessDiv">درخواست شما با موفقیت ثبت گردید</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="appointment-img">
+					<div class="img-one">
+						<img src="~/assets/img/appointment/gallery_item_img_04.jpg" alt="کلینیک روانشناسی مستانه"/>
+						@*<img src="/assets/img/appointment/appointment-1.jpg" alt="کلینیک روانشناسی مستانه">*@
+					</div>
+					<div class="img-two">
+						<img src="/assets/img/appointment/appointment-2.jpg" alt="کلینیک روانشناسی مستانه">
+					</div>
+					<div class="img-three">
+						<img src="~/assets/img/appointment/owl_img_02.jpg" alt="کلینیک روانشناسی مستانه"/>
+						@*<img src="/assets/img/appointment/appointment-3.jpg" alt="کلینیک روانشناسی مستانه">*@
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="services-area pt-100 pb-70">
-		<div class="container">
-			<div class="section-title-one">
-				<span>خدمات ما</span>
-				<h2>خدمات اصلی مرکز روانشناسی مستانه به شرح زیر می باشد</h2>
-			</div>
-			<div class="row">
-				@foreach (var service in Model.HomeServices)
-				{
-					<div class="col-lg-3 col-sm-6">
-						<div class="services-card-three">
-							<a href="/service/@service.UrlParam">
-								<img src="@service.ThumbImageUrl" alt="@service.Title">
-							</a>
-							<div class="s-card-three-text">
-								<h3><a href="/service/@service.UrlParam">@service.Title</a></h3>
-								<div class="s-card-three-btn">
-									<a href="/service/@service.UrlParam" class="default-btn three">اطلاعات بیشتر
-										<span></span>
-									</a>
-								</div>
+	<div class="container">
+		<div class="section-title-one">
+			<span>خدمات ما</span>
+			<h2>خدمات اصلی مرکز روانشناسی مستانه به شرح زیر می باشد</h2>
+		</div>
+		<div class="row">
+			@foreach (var service in Model.HomeServices)
+			{
+				<div class="col-lg-3 col-sm-6">
+					<div class="services-card-three">
+						<a href="/service/@service.UrlParam">
+							<img src="@service.ThumbImageUrl" alt="@service.Title">
+						</a>
+						<div class="s-card-three-text">
+							<h3><a href="/service/@service.UrlParam">@service.Title</a>
+							</h3>
+							<div class="s-card-three-btn">
+								<a href="/service/@service.UrlParam" class="default-btn three">اطلاعات بیشتر
+									<span></span>
+								</a>
 							</div>
 						</div>
 					</div>
-				}
-			</div>
+				</div>
+			}
 		</div>
 	</div>
- 
+</div>
+
 <div class="team-area bg-color ptb-100">
 	<div class="container">
 		<div class="section-title-one">
@@ -279,7 +288,8 @@
 						<img src="@expert.ImageUrl" alt="@expert.FullName">
 					</a>
 					<div class="caption">
-						<h3><a href="#">@expert.FullName</a></h3>
+						<h3><a href="#">@expert.FullName</a>
+						</h3>
 						<span>@expert.Degree</span>
 						<ul class="social-link">
 							<li>
@@ -307,7 +317,7 @@
 				</div>
 			}
 		</div>
-		
+
 		<div class="expert-btn">
 			<a href="/expert" class="default-btn">
 				مشاهده کلیه مشاوران مستانه <span></span>
@@ -316,15 +326,15 @@
 	</div>
 </div>
 
-	<div class="blog-area ptb-100">
-		<div class="container">
-			<div class="section-title-one">
-				<span>وبلاگ مستانه</span>
-				<h2>آخرین اخبار و مقالات</h2>
-			</div>
-			<div class="blog-slider owl-carousel owl-theme">
-				@foreach (var blog in Model.HomeBlogs)
-				{
+<div class="blog-area ptb-100">
+	<div class="container">
+		<div class="section-title-one">
+			<span>وبلاگ مستانه</span>
+			<h2>آخرین اخبار و مقالات</h2>
+		</div>
+		<div class="blog-slider owl-carousel owl-theme">
+			@foreach (var blog in Model.HomeBlogs)
+			{
 				<div class="blog-card">
 					<a href="/blog/post/@blog.UrlParam">
 						<img src="@blog.ImageUrl" alt="@blog.Title">
@@ -341,16 +351,16 @@
 						</div>
 					</div>
 				</div>
-				}
-			</div>
+			}
 		</div>
 	</div>
-		@Html.Partial("FrontEnd/_FooterPartial")
- 
+</div>
+@Html.Partial("FrontEnd/_FooterPartial")
+
 <div class="go-top">
 	<i class='bx bxs-upvote'></i>
 </div>
-	
+<link rel="stylesheet" href="/assets/css/style.min.css">
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/boxicons.min.css">
 <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
@@ -359,21 +369,22 @@
 <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
-<link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/responsive.css">
 <link rel="stylesheet" href="/assets/css/rtl.css">
-	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/popper.min.js"></script>
-	<script src="/assets/js/bootstrap.min.js"></script>
-	<script src="/assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="/assets/js/meanmenu.min.js"></script>
-	<script src="/assets/js/jquery.nice-select.min.js"></script>
-	<script src="/assets/js/owl.carousel.min.js"></script>
-	<script src="/assets/js/jquery.mixitup.min.js"></script>
-	<script src="/assets/js/form-validator.min.js"></script>
-	<script src="/assets/js/contact-form-script.js"></script>
-	<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+<link href="~/assets/css/style-zavosh.css?v1.1" rel="stylesheet"/>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/meanmenu.min.js"></script>
+<script src="/assets/js/jquery.nice-select.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.mixitup.min.js"></script>
+<script src="/assets/js/form-validator.min.js"></script>
+<script src="/assets/js/contact-form-script.js"></script>
+<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
 <script src="/assets/js/custom.js"></script>
-	<script src="~/assets/js/function.js"></script>
+<script src="~/assets/js/function.js"></script>
 </body>
 </html>
