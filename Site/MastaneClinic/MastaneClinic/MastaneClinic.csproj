@@ -193,6 +193,7 @@
     <Content Include="assets\fonts\._boxicons.svg" />
     <Content Include="assets\fonts\boxicons.svg" />
     <Content Include="assets\img\about\about-1.jpg" />
+    <Content Include="assets\img\about\about-12.jpg" />
     <Content Include="assets\img\agency.jpg" />
     <Content Include="assets\img\appointment\appointment-1.jpg" />
     <Content Include="assets\img\appointment\appointment-2.jpg" />
